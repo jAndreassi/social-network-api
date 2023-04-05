@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-// const  = require("./");
+const thoughtSchema = require("./Thought");
 
 // Schema to create User model
 const userSchema = new Schema(
@@ -14,12 +14,12 @@ const userSchema = new Schema(
       required: true,
       max_length: 50,
     },
-    thoughts: {
+    thought: {
       type: String,
       required: true,
       max_length: 50,
     },
-    friends: [Schema],
+    // friends: [Schema],
   },
   {
     toJSON: {
