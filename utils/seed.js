@@ -26,14 +26,14 @@ connection.once("open", async () => {
   await Thought.collection.insertMany(Thought);
 
   // Add user to the collection and await the results
-  await user.collection.insertOne({
-    user: "Magic Johnson",
-  });
+  // await user.collection.insertOne({
+  //   user: "Magic Johnson",
+  // });
 
   // Add thought to the collection and await the results
-  await thoughts.collection.insertOne({
-    thought: "Holy Smoke",
-  });
+  // await thoughts.collection.insertOne({
+  //   thought: "Holy Smoke",
+  // });
 
   // Log out the seed data to indicate what should appear in the database
   console.table(user);
