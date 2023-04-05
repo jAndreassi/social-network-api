@@ -1,4 +1,4 @@
-const users = [
+const user = [
   {
     username: "Micheal Phelps",
     email: "mphelps@gmail.com",
@@ -31,7 +31,7 @@ const users = [
   },
 ];
 
-thoughts = [
+const thought = [
   {
     thoughtText: "I love driving fast",
     username: "Tiger Woods",
@@ -46,6 +46,6 @@ thoughts = [
   },
 ];
 
-const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+// const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-module.exports = { users, thoughts };
+module.exports = { user, thought };
